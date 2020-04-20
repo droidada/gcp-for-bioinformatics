@@ -1,12 +1,12 @@
 # Use Public Reference Datasets
 
-### What is this
+### Intro
 - Google Cloud Genomics provides a variety of public datasets that you can access for free and integrate into your research jobs
     - An example is the 1000 Genomes dataset - [link](https://cloud.google.com/genomics/docs/public-datasets/1000-genomes)
-    - Google hosts these datasets and provides public access to the data via as BigQuery datasets or Cloud Storage buckets.
+    - Google hosts these datasets and proves public access to the data via as BigQuery datasets or Cloud Storage buckets.
 
 ### Why do this
- - USE a reference file in genomic cloud-based analysis
+ - USE a reference file in cloud-based analysis
  - SAVE time by using a reference file that is already available in the cloud (no need to upload)
 
 ### Key considerations
@@ -19,7 +19,6 @@
  - To access these public files, you can use a number of GCP services (such as Compute Engine VMs), or tools such as Terra.bio from The Broad or others.
     - Go to the [public REFERENCE Files](https://console.cloud.google.com/storage/genomics-public-data/) cloud storage bucket
     - Go to the [public ANNOTATION Files](https://console.cloud.google.com/storage/browser/gcs-public-data--genomics/human-variant-annotation) cloud storage bucket
-    -  USE the `htsget` protocol to access genomic datasets stored in GCS - [link](https://cloud.google.com/life-sciences/docs/how-tos/reading-data-htsget), used for larger-sized datasets (optimization for access speeds)
 
 ### How to verify you've done it
  - REFERENCE the file in a BigQuery query or a VM-based analysis
